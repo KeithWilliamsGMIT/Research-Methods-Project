@@ -127,7 +127,7 @@
 % *** GRAPHICS RELATED PACKAGES ***
 %
 \ifCLASSINFOpdf
-  % \usepackage[pdftex]{graphicx}
+  \usepackage[pdftex]{graphicx}
   % declare the path(s) where your graphic files are
   % \graphicspath{{../pdf/}{../jpeg/}}
   % and their extensions so you won't have to specify these with
@@ -541,7 +541,16 @@ When discussing Continuous Delivery it is necessary to also mention Continuous I
 % needed in second column of first page if using \IEEEpubid
 %\IEEEpubidadjcol
 
-\subsection{}
+\subsection{Continuous Delivery}
+Continuous Delivery is the discipline of ensuring that the system under development is ready to be released to production at any given time. Continuous Delivery extends Continuous Integration and requires the release process to be automated. While Continuous Integration is a single stage process, Continuous Delivery is a multi stage process \cite{LAUKKANEN201755}.
+\par Continuous Delivery is usually achieved by creating a multi stage pipeline which the application is passed through. The Continuous Delivery pipeline might vary slightly between different applications. A typical pipeline might have the following stages, at a minimum. First the code is committed to a version control repository. Next is the build stage which is responsible for executing unit and integration tests, generating code coverage and also building artifacts. These build artifacts are used in all later stages of the pipeline. The final stage is the production stage where the build artifact is deployed to the production environment. Additional stages might include acceptance testing, performance testing and manual testing stages. If any errors occur at any stage in the pipeline the pipeline stops and the developers are notified.
+\par It's also worth mentioning the term Continuous Deployment which is an extension on Continuous Delivery where there are no manual steps from the commit stage to the production stage \cite{LAUKKANEN201755}. These terms are often used interchangeably in industry. The purpose and goal of adopting Continuous Delivery or Continuous Deployment goes back to the main goal of DevOps of quick development cycles. The relationship between all three concepts is outlined in Figure \ref{fig:relationship}.
+
+\begin{figure*}
+	\includegraphics[width=\linewidth]{relationship.png}
+	\caption{Adapted from Shanin \cite{shahin2017continuous}. The relationship between continuous integration, delivery and deployment.}
+	\label{fig:relationship}
+\end{figure*}
 
 % An example of a floating figure using the graphicx package.
 % Note that \label must occur AFTER (or within) \caption.
