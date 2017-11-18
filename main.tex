@@ -555,7 +555,7 @@ It's also worth mentioning the term continuous deployment which is an extension 
 \end{figure*}
 
 \section{Benefits of Continuous Delivery}
-Some proposed benefits of continuous delivery are automated acceptance and unit tests, improved communication, increased productivity and efficiency, the ability of finding problems earlier in the software development life cycle (SDLC) which reduce costs, increased customer satisfaction, shorter time-to-market, narrower testing scope and improved release reliability and quality \cite{LAUKKANEN201755}.
+Some proposed benefits of continuous delivery include increased productivity and efficiency, shorter time-to-market, improved communication, improved release reliability and quality and automated acceptance and unit tests \cite{LAUKKANEN201755}. These benefits are explained below.
 
 \subsection{Increased Productivity}
 It has been found that adopting continuous delivery helps to increase developer productivity for a number of reasons. It enables a single developer to both develop and deploy an improvement to the system \cite{mantyla2015rapid}, it facilitates parallel development \cite{staahl2013experienced}, there is less compiling and testing needed locally before checking in changes and also as a direct result of the automating the deployment process \cite{RODRIGUEZ2017263}. M{\"a}ntyl{\"a} found that this increase in production led to more tests being executed per day after moving from the traditional release approach to using continuous delivery \cite{mantyla2015rapid}. This was the result of either more builds needing to be tested or the changes between builds increased which required more testing for each build. Chen estimates developers also spent 20 percent of their time configuring test environments and operations \cite{chen2015continuous}. Likewise, testers spent a considerable amount of time configuring test environments. On top of this developers and operation engineers had to spend considerable effort troubleshooting each deployment. This is all automated by the continuous delivery process.
@@ -573,7 +573,7 @@ By releasing a software product more frequently, the changes between deployments
 Although automated testing is a result of continuous integration, as mentioned above, continuous delivery is an extension of continuous integration. Continuous integration is considered essential in supporting the agile testing practices, which involves both automated customer defined acceptance tests and unit tests that are written in conjunction with production code \cite{staahl2013experienced}. Staahl states that the acceptance tests should be run at least daily as part of a regression test suite \cite{staahl2013experienced}. A regression test suite is a set of test scenarios that are designed to ensure that software is still functional after making changes. These tests are more effective when there is a direct interaction with the customer \cite{staahl2013experienced}. The unit tests should be written for all new code added during a development cycle and should be run those with every build \cite{staahl2013experienced}. By writing and automating these tests ensure that the system is regularly verified and validated. In other words it ensures that the system works and is what the customer requires.
 
 \section{Challenges of Continuous Delivery}
-Continuous delivery does not come without its challenges which can make it unappealing to adopt. These challenges include increased technical debt, lower reliability and test coverage, lower customer satisfaction, time pressure, transforming towards continuous delivery, increased quality assurance (QA) effort and applying continuous delivery in the embedded domain.
+Continuous delivery does not come without its challenges which can make it unappealing to adopt. These challenges include transforming towards continuous delivery, increased time pressure, increased technical debt, lower test coverage and an increased quality assurance (QA) effort \cite{LAUKKANEN201755}. These challenges are described below.
 
 \subsection{Transforming towards Continuous Delivery}
 Adopting continuous delivery requires a change of mindset and organisational culture \cite{chen2015continuous}. For example, different teams with different goals must be able to work together. People are generally resistant to change unless there are convincing reasons for those changes \cite{shahin2017continuous}. Therefore, this kind of organisational change must come from higher management who have the ability to break down various barriers within an organisation and who can promote a collaborative culture or from heroic employees looking for a better solution to the problems of the traditional approach. Changing culture can be a difficult and time-consuming process. Shahin also outlines a number of reasons why not all developers embrace continuous delivery. They include the fear of exposing low quality code, skepticism about the added values of adopting continuous delivery as well as the potential risks of adopting continuous delivery \cite{shahin2017continuous}.
@@ -716,14 +716,11 @@ As seen in this paper, the rapid release approach that continuous delivery offer
 % use section* for acknowledgment
 \ifCLASSOPTIONcompsoc
   % The Computer Society usually uses the plural form
-  \section*{Acknowledgments}
-\else
+  % \section*{Acknowledgments}
+%\else
   % regular IEEE prefers the singular form
-  \section*{Acknowledgment}
-\fi
-
-
-The authors would like to thank...
+  % \section*{Acknowledgment}
+%\fi
 
 
 % Can use something like this to put references on a page
@@ -770,9 +767,9 @@ The authors would like to thank...
 %\begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{mshell}}]{Michael Shell}
 % or if you just want to reserve a space for a photo:
 
-\begin{IEEEbiography}{Keith Williams}
-Biography text here.
-\end{IEEEbiography}
+% \begin{IEEEbiography}{Keith Williams}
+% Biography text here.
+% \end{IEEEbiography}
 
 % if you will not have a photo at all:
 %\begin{IEEEbiographynophoto}{Keith Williams}
